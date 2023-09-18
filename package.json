@@ -1,0 +1,14 @@
+{
+  "name": "sailer",
+  "version": "1.0.0",
+  "description": "An experimental IDE",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "electron": "^27.0.0-beta.3"
+  }
+}
