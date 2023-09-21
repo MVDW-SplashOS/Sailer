@@ -8,4 +8,26 @@
 
 body{
   background: #22292b;
+  padding: 0px;
+  margin: 0px;
+}
+#root{
+  height: calc(100vh);
+  width: calc(100vw);
+  overflow: hidden; 
+}
+#header {
+
+  background: #f00;
+  width: 100vw;
+  height: 2em;
+}
+#main{
+  height: calc(100vh - 6em);
+  padding: 1em;
+}
+#footer {
+  background: #0f0;
+  width: 100vw;
+  height: 2em;
 }

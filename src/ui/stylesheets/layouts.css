@@ -6,3 +6,12 @@
   float: left;
   margin: 0.25em;
 }
+
+.container.split {
+  width: 100%;
+  display:flex;
+}
+.container.split .horizontal{
+  width: inherit;
+}
+

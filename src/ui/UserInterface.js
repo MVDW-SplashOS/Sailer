@@ -1,23 +1,29 @@
-import TileButton from './components/buttons/TileButton.js';
-import Textbox from './components/textboxes/Textbox.js';
-
-import Grid from './layouts/Grid.js';
 
 
 import Render from './Render.js';
+import page from './pages/Projects.js';
 
 const init_ui = () => {
 
-    console.log("init ui..");
+    // Create basic UI elements 
+    const el_bar_header = document.createElement("div");
+    const el_bar_footer = document.createElement("div");
+    const el_main = document.createElement("div");
+
+    // Set basic information for UI elements
+    el_bar_header.id = "header";
+    el_bar_footer.id = "footer";
+    el_main.id = "main";
     
-    const el_search = Textbox("Search");
-    Render(el_search);
+    // Start creating main content
+    el_main.appendChild(page());
+
     
-    var items = [];
-    items.push(TileButton("SplashBuilder", 1, "code", [["github", "brands"], ["Crown"]]));
-    items.push(TileButton("SyncPlay", 1, "code-fork", [["github", "brands"]]));
-   
-    Render(Grid(items));
+    
+    // Render elements
+    Render(el_bar_header);
+    Render(el_main);
+    Render(el_bar_footer);
 }
 
 export default init_ui;
